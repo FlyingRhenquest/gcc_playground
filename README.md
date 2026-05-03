@@ -4,6 +4,11 @@ I'm setting this project up to build the gcc master branch
 from their github mirror if you want to play with it now but
 your distribution doesn't have packages for it yet.
 
+I've tested and verified this works on:
+
+ - Debian Experimental
+ - WSL (Ubuntu 22.04 image)
+
 # Scripts
 
 ## build_gcc.sh
