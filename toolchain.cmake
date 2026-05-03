@@ -2,7 +2,6 @@
 # gcc-16.
 
 # To build with this toolchain file, call "cmake -DCMAKE_TOOLCHAIN_FILE=/path/to/this/file " ...
-set(CMAKE_SYSTEM_NAME Linux)
 set(CMAKE_C_COMPILER /usr/local/gcc/bin/gcc)
 set(CMAKE_CXX_COMPILER /usr/local/gcc/bin/g++)
 set(CMAKE_CXX_EXTENSIONS OFF)
