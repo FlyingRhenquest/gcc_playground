@@ -15,6 +15,17 @@ Please review the script and toolchain files prior
 to running them to make sure what's going on in
 there meets your needs.
 
+Note: The gcc build needs gnu flex and bison installed.
+If you're on a Debian-type system, you should just be
+able to "apt-install flex bison". This will probably
+work similarly for systems with yum. If you got errors
+during the gcc compile about yyend not existing,
+install flex and bison and then remove the ../gcc/build
+directory and re-run ./buildgcc.sh. The gcc configure
+step needs to be rerun to find flex and bison and
+the build script won't do that if the build directory
+exists.
+
 This project will install the toolchain.cmake file in
 /usr/local/gcc as well, so you can call CMake with
 -DCMAKE\_TOOLCHAIN\_FILE=/usr/local/gcc/toolchain.cmake
